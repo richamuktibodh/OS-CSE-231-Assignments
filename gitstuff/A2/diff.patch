@@ -1,0 +1,27 @@
+210,235d209
+< SYSCALL_DEFINE2(richa, int, s,int, p)
+< {	
+< 	int i;
+< 	int res;
+< 	int temp;
+< 	res = copy_from_user(&i, &s, sizeof(int));
+< 	temp = copy_to_user(&p, &i, sizeof(int));
+< 	printk("done");
+< 	return 0;
+< }
+< 
+< SYSCALL_DEFINE3(kernel_2d_memcpy,float*,src , float*, dest, int, len)
+< {
+< 	float buffer[3][3];
+< 	if (__copy_from_user(buffer, src, sizeof(buffer)))
+< 	{
+< 		return -EFAULT;
+< 	}
+< 	if (__copy_to_user(dest, buffer, sizeof(buffer))){
+< 		return -EFAULT;
+< 	}
+< 	printk("done");
+< 	return 0;
+< }
+< 		
+< 
