@@ -1,1 +1,1 @@
-# A collection of Assignments done in the course OPerating Systems @IIITD
+# A collection of Assignments done in the course Operating Systems @IIITD
